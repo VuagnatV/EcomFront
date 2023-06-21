@@ -1,0 +1,25 @@
+.order-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.order-list {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.order-list>* {
+    margin-right: 20px;
+}
+
+.order-list>*:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .order-list {
+        flex-direction: column;
+    }
+}

@@ -1,18 +1,30 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
-function NavBar() {
+const Navbar = () => {
     return (
-        <Navbar bg="dark" expand="sm" variant="dark">
-            <Container>
-                <Nav >
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/login">login</Nav.Link>
-                </Nav>
-            </Container>
-        </Navbar>
-    )
-}
+        <nav className="navbar">
+            <h1> ECOM </h1>
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                    <Link to="/" className="nav-link">Home</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/login" className="nav-link">Login</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/Register" className="nav-link">Register</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/cart" className="nav-link">Cart</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/orders" className="nav-link">Orders</Link>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
-export default NavBar
+export default Navbar;

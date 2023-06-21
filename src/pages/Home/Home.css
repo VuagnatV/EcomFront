@@ -1,0 +1,15 @@
+.home {
+    padding: 20px;
+
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    margin: 10px;
+
+}
