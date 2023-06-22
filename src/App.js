@@ -9,7 +9,7 @@ import Cart from './pages/Cart/Cart';
 import Order from './pages/Order/Order';
 import Navbar from './components/NavBar/navbar';
 
-//axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = true;
 
 function App() {
   return (
