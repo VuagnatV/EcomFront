@@ -28,6 +28,7 @@ const Login = () => {
                 .then((res) => login({ email, id: res.data.id, loggedIn: true }))
 
             alert("logged in successfully")
+            console.log(session.id)
 
             setEmail('')
             setPassword('')
