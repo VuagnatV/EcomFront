@@ -7,7 +7,7 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register'
 import Cart from './pages/Cart/Cart';
 import Order from './pages/Order/Order';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/NavBar/navbar';
 
 //axios.defaults.withCredentials = true;
 
