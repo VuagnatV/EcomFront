@@ -9,6 +9,7 @@ const Home = () => {
 
     const [session] = useContext(SessionContext);
     const { data } = useFetch("https://ecom-api-ctiy.onrender.com/api/v1/product")
+    console.log(session.id)
 
     return (
 
