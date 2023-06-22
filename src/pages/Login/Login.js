@@ -11,7 +11,7 @@ const Login = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('http://localhost:3006/api/v1/authentication/logout')
+            await axios.post('https://ecom-api-ctiy.onrender.com/api/v1/authentication/logout')
                 .then(setSession({ email: null, id: null, loggedIn: false }))
 
         } catch (err) {
@@ -24,7 +24,7 @@ const Login = () => {
 
         try {
 
-            await axios.post('http://localhost:3006/api/v1/authentication/login', { email, password })
+            await axios.post('https://ecom-api-ctiy.onrender.com/api/v1/authentication/login', { email, password })
                 .then((res) => login({ email, id: res.data.id, loggedIn: true }))
 
             alert("logged in successfully")

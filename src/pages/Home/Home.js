@@ -8,7 +8,7 @@ import ProductCard from '../../components/ProductCard/ProductCard';
 const Home = () => {
 
     const [session] = useContext(SessionContext);
-    const { data } = useFetch("http://localhost:3006/api/v1/product")
+    const { data } = useFetch("https://ecom-api-ctiy.onrender.com/api/v1/product")
 
     return (
 

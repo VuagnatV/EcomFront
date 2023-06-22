@@ -10,18 +10,10 @@ const Register = () => {
 
     const navigate = useNavigate()
 
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
-
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post('http://localhost:3006/api/v1/authentication/register', { email, password })
+        axios.post('https://ecom-api-ctiy.onrender.com/api/v1/authentication/register', { email, password })
             .then(res => {
                 if (res.data.status === "success") {
                     alert("registrtion succesfull")

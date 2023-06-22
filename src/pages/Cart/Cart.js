@@ -11,7 +11,7 @@ const Cart = () => {
     useEffect(() => {
 
         if (session?.loggedIn) {
-            axios.get("http://localhost:3006/api/v1/cart/" + session.id)
+            axios.get("https://ecom-api-ctiy.onrender.com/api/v1/cart/" + session.id)
                 .then((response) => {
                     setCartItems(response.data);
                 })
@@ -27,7 +27,7 @@ const Cart = () => {
             alert("your cart is empty")
         } else {
             try {
-                await axios.delete(`http://localhost:3006/api/v1/cart/${session.id}`);
+                await axios.delete(`https://ecom-api-ctiy.onrender.com/api/v1/cart/${session.id}`);
                 alert("successfully deleted from the cart")
             } catch (error) {
                 // Handle any errors that occurred during the API call
@@ -42,7 +42,7 @@ const Cart = () => {
             alert("your cart is empty")
         } else {
             try {
-                await axios.post(`http://localhost:3006/api/v1/order/${session.id}`, cartItems);
+                await axios.post(`https://ecom-api-ctiy.onrender.com/api/v1/order/${session.id}`, cartItems);
                 alert("successfully placed th order")
             } catch (error) {
                 // Handle any errors that occurred during the API call
@@ -56,7 +56,7 @@ const Cart = () => {
     const handleDeleteCartItem = async (id) => {
 
         try {
-            await axios.delete(`http://localhost:3006/api/v1/cart/${session.id}/${id}`);
+            await axios.delete(`https://ecom-api-ctiy.onrender.com/api/v1/cart/${session.id}/${id}`);
             alert("successfully deleted from the cart")
         } catch (error) {
             // Handle any errors that occurred during the API call

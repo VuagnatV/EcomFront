@@ -11,7 +11,7 @@ const ProductCard = ({ product, id }) => {
             alert("you must be logged in !")
         } else {
             try {
-                await axios.put(`http://localhost:3006/api/v1/cart/${id}`, { productId: product.id });
+                await axios.put(`https://ecom-api-ctiy.onrender.com/api/v1/cart/${id}`, { productId: product.id });
                 alert("succefully added to the cart")
             } catch (error) {
                 alert(error.response.data.error)

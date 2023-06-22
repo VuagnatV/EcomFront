@@ -13,7 +13,7 @@ const Order = () => {
     useEffect(() => {
 
         if (session?.loggedIn) {
-            axios.get("http://localhost:3006/api/v1/order/" + session.id)
+            axios.get("https://ecom-api-ctiy.onrender.com/api/v1/order/" + session.id)
                 .then((response) => {
                     setOrders(response.data);
                 })
