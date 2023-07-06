@@ -49,7 +49,7 @@ const Login = () => {
                     </div>
                 )
                 : (
-                    <form onSubmit={handleLogin}>
+                    <form className="register-form" onSubmit={handleLogin}>
                         <div>
                             <label>Email : </label>
                             <input
