@@ -11,6 +11,10 @@
     border-color: black;
 }
 
+.order-card>* {
+    margin: 5px;
+}
+
 .order-id {
     font-weight: bold;
 }
