@@ -12,7 +12,7 @@ const ProductCard = ({ product, id }) => {
         } else {
             try {
                 await axios.put(`https://ecom-api-ctiy.onrender.com/api/v1/cart/${id}`, { productId: product.id });
-                alert("succefully added to the cart")
+                alert("successfully added to the cart")
             } catch (error) {
                 alert(error.response.data.error)
             }
