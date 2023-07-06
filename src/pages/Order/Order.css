@@ -1,6 +1,6 @@
 .order-page {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20 auto;
 }
 
 .order-list {
@@ -16,10 +16,4 @@
 
 .order-list>*:last-child {
     margin-right: 0;
-}
-
-@media screen and (max-width: 768px) {
-    .order-list {
-        flex-direction: column;
-    }
 }
