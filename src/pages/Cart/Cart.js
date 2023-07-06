@@ -43,7 +43,7 @@ const Cart = () => {
         } else {
             try {
                 await axios.post(`https://ecom-api-ctiy.onrender.com/api/v1/order/${session.id}`, cartItems);
-                alert("successfully placed th order")
+                alert("successfully placed the order")
             } catch (error) {
                 // Handle any errors that occurred during the API call
                 alert(error.response.data.error)
