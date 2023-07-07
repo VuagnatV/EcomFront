@@ -30,7 +30,6 @@ const Cart = () => {
                 await axios.delete(`https://ecom-api-ctiy.onrender.com/api/v1/cart/${session.id}`);
                 alert("successfully deleted from the cart")
             } catch (error) {
-                // Handle any errors that occurred during the API call
                 alert(error.response.data.error)
             }
         }
